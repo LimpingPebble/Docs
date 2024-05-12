@@ -1,0 +1,19 @@
+site_name: StoneEngine Documentation
+
+site_description: Documentation and tutorials about the allmighty 3D game engine
+site_url: https://limpingpebble.github.io/Docs/
+
+repo_url: https://github.com/LimpingPebble/Docs/
+
+plugins:
+  - search
+  - mermaid2
+
+theme:
+  name: material
+  palette:
+    primary: green
+    accent: light green
+  font:
+    text: Roboto
+    code: Roboto Mono
