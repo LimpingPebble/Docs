@@ -52,12 +52,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         if: ${{ !env.ACT }}
         with:
-          name: Docs
-          path: ${{ github.workspace }}/site
-          retention-days: 7
+          path: site
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: Docs
