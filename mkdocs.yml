@@ -5,5 +5,6 @@ site_description: Documentation and tutorials about the allmighty 3D game engine
 plugins:
   - search
   - mermaid2
+  - mkdocs-video
 
 theme: readthedocs
