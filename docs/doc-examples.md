@@ -1,5 +1,7 @@
 # MkDocs examples
 
+Examples of things we can insert in a documentation page
+
 <hr>
 
 ## Insert link
