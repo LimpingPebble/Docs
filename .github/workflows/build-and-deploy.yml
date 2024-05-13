@@ -39,7 +39,11 @@ jobs:
       - name: Build documentation
         run: make build
 
-      - run: ls -al
+      - name: Upload documentation artifacts
+        uses: actions/upload-pages-artifact@v3
+        if: ${{ !env.ACT }}
+        with:
+          path: ${{ github.workspace }}/site
 
   deploy:
     environment:
@@ -49,12 +53,6 @@ jobs:
     needs: build
     if: ${{ !github.event.act }}
     steps:
-
-      - name: Upload documentation artifacts
-        uses: actions/upload-pages-artifact@v3
-        if: ${{ !env.ACT }}
-        with:
-          path: ${{ github.workspace }}/site
 
       - name: Deploy to GitHub Pages
         id: deployment
