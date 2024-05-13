@@ -1,3 +1,1 @@
-# 🗿 Home
-
-🗿 Stone Engine
+# 🗿 Stone Engine
